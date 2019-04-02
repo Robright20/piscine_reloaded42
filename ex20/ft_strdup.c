@@ -6,7 +6,7 @@
 /*   By: fokrober <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/31 14:40:09 by fokrober          #+#    #+#             */
-/*   Updated: 2019/03/31 15:27:16 by fokrober         ###   ########.fr       */
+/*   Updated: 2019/04/02 04:04:22 by fokrober         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int		ft_strlen(char *str)
 
 char	*ft_strdup(char *src)
 {
-	char *dup;
-	int i;
+	char	*dup;
+	int		i;
 
 	dup = (char*)malloc(ft_strlen(src) * sizeof(*src));
 	i = -1;

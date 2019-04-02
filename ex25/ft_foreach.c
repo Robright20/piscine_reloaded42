@@ -6,13 +6,15 @@
 /*   By: fokrober <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/01 03:13:55 by fokrober          #+#    #+#             */
-/*   Updated: 2019/04/02 04:05:26 by fokrober         ###   ########.fr       */
+/*   Updated: 2019/04/02 19:52:37 by fokrober         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_foreach(int *tab, int lenght, void (*f)(int))
 {
-	while (--lenght)
-		f(tab[lenght]);
-	f(tab[lenght]);
+	int i;
+
+	i = -1;
+	while (++i < lenght)
+		f(tab[i]);
 }

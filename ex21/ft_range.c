@@ -6,7 +6,7 @@
 /*   By: fokrober <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/31 15:31:01 by fokrober          #+#    #+#             */
-/*   Updated: 2019/03/31 21:07:02 by fokrober         ###   ########.fr       */
+/*   Updated: 2019/04/02 19:06:32 by fokrober         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		*ft_range(int min, int max)
 	int	diff;
 
 	diff = max - min;
-	if (diff < 0)
+	if (diff <= 0)
 		return (0);
 	range = (int*)malloc(diff * sizeof(*range));
 	while (--diff)
